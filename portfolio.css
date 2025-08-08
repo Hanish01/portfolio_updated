@@ -1,3 +1,10 @@
+
+#site-wrapper {
+  transform: scale(1.5);
+  transform-origin: top left;
+}
+
+
 *
 {
     color: white;
@@ -534,3 +541,4 @@ input[type="radio"] {
 .download-btn:hover {
     background-color: #aaff00;
 }
+
