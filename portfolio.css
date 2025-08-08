@@ -1,8 +1,5 @@
 
-#site-wrapper {
-  transform: scale(1.5);
-  transform-origin: top left;
-}
+
 
 
 *
@@ -541,4 +538,5 @@ input[type="radio"] {
 .download-btn:hover {
     background-color: #aaff00;
 }
+
 
