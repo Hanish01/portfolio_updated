@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="portfolio.css">
+        <title>My portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      
+    </head>
+    <body>
+       <div id="whole">
+      <div id="header">
+         <ul id="nav">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contactus">Contact us</a></li>
+        </ul>
+      </div>
+      <div id="aboutme">
+        <div id="me-cont">
+            <img id="mypic" src="img/mee.jpeg" alt="My Picture">
+            <div class="flex-col">
+                <h1 class="text" style="margin-bottom: 20px;">I am <span class="special">Hanish Vardhan</span></h1>
+                <p class="text">
+                   Hello! I'm a passionate web developer who thrives on creativity and storytelling. From designing visuals to animating scenes, editing videos, and crafting narratives.
+                </p>
+                <a href="img/cv.pdf" download class="download-btn">Download CV</a>
+
+            </div>
+        </div>
+       
+        <div id="skills">
+  <h1 style="padding-top: 30px;"> <span class="special" >Skills and Projects</span></h1>
+
+  <div class="skill-section">
+    <div class="slideshow-container">
+      <div class="slide active">
+        <img src="img/supermarket1.jpg" alt="Slide 1">
+        <div class="slide-caption">supermarket1</div>
+      </div>
+      <div class="slide">
+        <img src="img/supermarket2.jpg" alt="Slide 2">
+        <div class="slide-caption">supermarket2</div>
+      </div>
+      <div class="slide">
+        <img src="img/supermarket3.jpg" alt="Slide 3">
+        <div class="slide-caption">supermarket3</div>
+      </div>
+      <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+    </div>
+
+    <div class="flex-col">
+      <img src="img/htmlcss.webp" class="skills-image" alt="Skill Pic">
+      <p class="skill-name">HTML, CSS, JavaScript, React</p>
+      <p class="project-name">E-Commerce Grocery Website</p>
+    </div>
+  </div>
+
+ 
+  <div class="skill-section">
+    <div class="slideshow-container" id="art-slideshow">
+      <div class="slide active">
+        <img src="img/art1.jpeg" alt="Slide 1">
+        <div class="slide-caption">Art1</div>
+      </div>
+      <div class="slide">
+        <img src="img/art2.jpeg" alt="Slide 2">
+        <div class="slide-caption">Art2</div>
+      </div>
+      <div class="slide">
+        <img src="img/art3.jpeg" alt="Slide 3">
+        <div class="slide-caption">Art3</div>
+      </div>
+      <div class="slide">
+        <img src="img/inside part 2.png" alt="Slide 4">
+        <div class="slide-caption">Art4</div>
+      </div>
+      <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+    </div>
+
+    <div class="flex-col">
+      <img src="img/art.avif" class="skills-image" alt="Skill Icon">
+      <p class="skill-name">Art</p>
+      <p class="project-name">Recent Works</p>
+      <p class="project-name">Been an artist for<span class="special"> 8 Years</span></p>
+    </div>
+  </div>
+
+  
+  <div class="skill-section">
+    <div class="slideshow-container" id="animation-slideshow">
+      <div class="slide active">
+        <video autoplay muted loop controls>
+          <source src="img/animation1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="slide-caption">Animation 1</div>
+      </div>
+
+      <div class="slide">
+        <video autoplay muted loop controls>
+          <source src="img/animation2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="slide-caption">Animation 2</div>
+      </div>
+
+      <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+    </div>
+<div class="flex-col">
+  <img src="img/animation.webp" class="skills-image" alt="Skill Icon">
+  <p class="skill-name">Animation </p>
+  <p class="project-name">Animated a lot of GIFs and 2D videos</p>
+  <p class="project-name">Tools: Ibis paint x, flipaclip</p>
+</div>
+</div>
+<div class="skill-section">
+  <div class="slideshow-container">
+    <div class="slide active">
+      <video autoplay muted loop controls style="width: 100%; height: 100%; object-fit: contain; background-color: black;">
+        <source src="img/edit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="flex-col">
+    <img src="img/editor.jpg" class="skills-image" alt="Editor Icon">
+    <p class="skill-name">Video Editing</p>
+    <p class="project-name">been an editor for an Year</p>
+    <p class="project-name">Tools: Premiere Pro, After effects</p>
+    <a class="project-name" href="https://www.youtube.com/@RevolutionizeGaming1729">Click  here to see more</a>
+  </div>
+</div>
+
+  
+
+
+
+
+  <div id="achievements">
+  <h1><span class="special">Achievements</span></h1>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
+  <div style="position: relative; width: 60%; max-width: 500px; padding-bottom: 35%; overflow: hidden; border-radius: 12px;">
+    <iframe 
+      src="https://www.youtube.com/embed/JxcC5rH5itU" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px;">
+    </iframe>
+  </div>
+</div>
+
+   <ul style="margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 16px; max-width: 700px; color: white; text-align: center; padding-left: 20px;">
+  <li>Contributed as an artist for a  Project <strong>Multiverse Mission X (MMX)</strong>
+  The video has received over <strong>310,000 views</strong> on YouTube</li><br><br>
+  <strong>
+    Credits:
+  </strong><span class="glow" style="margin-bottom: 20px;"> <a href="https://docs.google.com/document/d/1XbFSzL0nrxaTi3ml8zykaOGHgU90qIpD9MAEJcEamV0/edit?usp=sharing">Click HERE</a>
+</ul></span> 
+
+  <ul style="margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 16px; max-width: 700px; color: white; text-align: center; padding-left: 20px;">
+  <li>Ranked among the <strong>Top 5</strong> in a storywriting competition in a Platform named <strong>INKIEWRITER</strong></li>
+
+</ul>
+    
+    
+  </div>
+  <div style="margin-top: 20px; "></div>
+
+  <div id="contactus" style="padding: 50px 20px; background-color: #111; color: white;">
+  <h1 style="text-align: center;"><span class="special">Contact Me</span></h1>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; max-width: 1000px; margin: 40px auto;">
+
+  
+    <div style="flex: 1; min-width: 300px;">
+      <p style="font-family: 'Montserrat'; font-size: 18px; margin-bottom: 20px;">
+        <strong>📧 My Mail:</strong><br>
+        <a href="mailto:kottehanish@gmail.com" style="color: #aaff00; text-decoration: none;">kottehanish@gmail.com</a>
+      </p>
+    
+    </div>
+
+   
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="font-family: 'Montserrat'; margin-bottom: 15px;">🔗 Find Me On</h3>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="https://github.com/Hanish01" target="_blank" style="text-decoration: none; color: white; background: #222; padding: 10px 15px; border-radius: 6px;">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://x.com/HANISH2SN" target="_blank" style="text-decoration: none; color: white; background: #222; padding: 10px 15px; border-radius: 6px;">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="https://www.linkedin.com/in/hanish-kotte" target="_blank" style="text-decoration: none; color: white; background: #222; padding: 10px 15px; border-radius: 6px;">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.youtube.com/@hanish5870" target="_blank" style="text-decoration: none; color: white; background: #222; padding: 10px 15px; border-radius: 6px;">
+          <i class="fab fa-youtube"></i> Main
+        </a>
+        <a href="https://www.youtube.com/@RevolutionizeGaming1729" target="_blank" style="text-decoration: none; color: white; background: #222; padding: 10px 15px; border-radius: 6px;">
+          <i class="fab fa-youtube"></i> Gaming channel 
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+  
+</div>
+
+
+
+<script>
+function changeSlide(button, n) {
+  const container = button.closest('.skill-section');
+  const slides = container.querySelectorAll('.slide');
+  let currentSlide = 0;
+  
+
+  slides.forEach((slide, index) => {
+    if (slide.classList.contains('active')) {
+      currentSlide = index;
+    }
+  });
+  
+
+  let newSlide = currentSlide + n;
+  if (newSlide >= slides.length) newSlide = 0;
+  if (newSlide < 0) newSlide = slides.length - 1;
+  
+
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+    slide.style.display = 'none';
+    
+
+    const videos = slide.querySelectorAll('video');
+    videos.forEach(video => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+  
+  slides[newSlide].classList.add('active');
+  slides[newSlide].style.display = 'block';
+  
+  
+  const newVideos = slides[newSlide].querySelectorAll('video');
+  newVideos.forEach(video => {
+    video.play();
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  document.querySelectorAll('.skill-section').forEach(section => {
+    const slides = section.querySelectorAll('.slide');
+    slides.forEach((slide, index) => {
+      if (index === 0) {
+        slide.classList.add('active');
+        slide.style.display = 'block';
+      } else {
+        slide.classList.remove('active');
+        slide.style.display = 'none';
+      }
+    });
+  });
+
+
+  document.querySelectorAll('.skill-section').forEach(section => {
+    const hasVideo = section.querySelector('video');
+    const slides = section.querySelectorAll('.slide');
+    
+    if (!hasVideo && slides.length > 1) {
+      let currentSlide = 0;
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides.forEach(slide => {
+          slide.classList.remove('active');
+          slide.style.display = 'none';
+        });
+        slides[currentSlide].classList.add('active');
+        slides[currentSlide].style.display = 'block';
+      }, 5000);
+    }
+  });
+});
+</script>
+
+    </body>
+</html>
